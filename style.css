@@ -10,6 +10,7 @@ h1 {
 }
 
 #content {
+    position: relative;
     margin-top: 300px;
     display: flex;
     justify-content: center;
@@ -21,12 +22,17 @@ table {
     margin: 20px;
 }
 
-table td {
+td {
     border: 5px solid white;
     width: 100px;
     height: 100px;
     text-align: center;
     font-size: 36px;
+}
+
+td:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
 }
 
 table tr:first-child td {
@@ -43,4 +49,19 @@ table tr:last-child td {
 
 table tr td:last-child {
     border-right: 0;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.winning-line {
+    position: absolute;
+    background-color: white;
+    height: 5px;
+    width: 100%;
+    z-index: 1;
 }
